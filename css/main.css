@@ -30,14 +30,13 @@ header {
 /* main section styles */
 #heroes-nav { 
     text-align: center; 
-    background-color: #343030;
+    background-color: #303034;
     
     /* added a background image to the nav element */
     background-image: url('../images/summoning_gate.png');
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
-    background-position-x: 30px;
     background-blend-mode: overlay;
 }
 
@@ -48,14 +47,14 @@ header {
     height: 220px;
     margin: 10px 8px;
 
-    background-color: black;
-    text-align: left;
+    background-color: rgba(46, 23, 222, 0.865);
+    text-align: center;
     overflow: hidden;
 }
 
 .heroes li h5 {
     padding: 14px  8px;
-    color: white;
+    color: whitesmoke;
 }
 
 .heroes li a {text-decoration: none;}
@@ -66,18 +65,18 @@ header {
     width: 150px;
     height: 150px;
 
-    background-image: url('../images/marvelSprites.jpg');
+    background-image: url('../images/fesprites.jpg');
 }
 
 .sprite:hover { background-position-y: -150px !important;}
 
-#carol { background-position: -150px 0; }
-#clint { background-position: -300px 0; }
-#hulk { background-position: -450px 0; }
-#thor { background-position: -600px 0; }
-#widow { background-position: -750px 0; }
+#clair { background-position: -150px 0; }
+#eirika { background-position: -300px 0; }
+#larachel { background-position: -450px 0; }
+#ike { background-position: -600px 0; }
+#soleil { background-position: -750px 0; }
 
-.red-bumper { height: 6px; background-color: red;}
+.gold-bumper { height: 6px; background-color: goldenrod;}
 
 article {padding: 20px; }
 article h3 {
@@ -150,10 +149,13 @@ footer {
 .lb_text {line-height: 1.6;
     margin-left: 0;
     padding-top: 2em;
+    color: white;
 }
 
+.lb_heading {color: white;}
+
 #lightBox {
-    background-image: url('../images/Cap_LB_Bg.png');
+    background-image: url('../images/marth_legendary_full.png');
 }
 
 /* toggle the lightbox on */
@@ -162,5 +164,21 @@ footer {
 /* .lightbox#lightBox { display : block } */
 
 #lightBox2 {
-    background-image: url('../images/Thor_LB_Bg.png');
+    background-image: url('../images/clair_full.png');
+}
+
+#lightBox3 {
+    background-image: url('../images/eirika_brave_full.png');
+}
+
+#lightBox4 {
+    background-image: url('../images/larachel_halloween_full.png');
+}
+
+#lightBox5 {
+    background-image: url('../images/ike_rd_full.png');
+}
+
+#lightBox6 {
+    background-image: url('../images/soleil_full.png');
 }
