@@ -53,8 +53,9 @@ header {
 }
 
 .heroes li h5 {
-    padding: 14px  8px;
-    color: whitesmoke;
+    padding: 7px;
+    color: gold;
+    font-size: medium;
 }
 
 .heroes li a {text-decoration: none;}
