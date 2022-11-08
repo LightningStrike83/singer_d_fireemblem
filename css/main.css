@@ -5,9 +5,13 @@
     box-sizing: border-box; 
 }
 
-.hidden { display: none; }
+.hidden { 
+    display: none; 
+}
 
-html, body { height: 100% }
+html, body { 
+    height: 100% 
+}
 
 body { 
   font-family: sans-serif;
@@ -25,7 +29,9 @@ header {
     text-align: center;
 }
 
-#main-logo { width: 300px; padding: 10px 0; }
+#main-logo { 
+    width: 300px; 
+    padding: 10px 0; }
 
 /* main section styles */
 #heroes-nav { 
@@ -40,9 +46,12 @@ header {
     background-blend-mode: overlay;
 }
 
-.heroes { list-style-type: none; }
+.heroes { 
+    list-style-type: none; 
+}
 
 .heroes li { 
+    position: relative;
     display: inline-block; 
     height: 220px;
     margin: 10px 8px;
@@ -52,15 +61,30 @@ header {
     overflow: hidden;
 }
 
-.heroes li h5 {
-    padding: 7px;
-    color: gold;
-    font-size: medium;
+.heroes li:hover .gold-bumper { 
+    height: 70px;
 }
 
-.heroes li a {text-decoration: none;}
+.heroes li:hover h5 {
+    color: black;
+}
 
-.heroes li img { width: 150px; cursor: pointer; }
+.heroes li h5 {
+    position: relative;
+    padding: 15px;
+    color: gold;
+    font-size: medium;
+
+    z-index: 50;
+}
+
+.heroes li a {
+    text-decoration: none;
+}
+
+.heroes li img { 
+    width: 150px; cursor: pointer; 
+}
 
 .sprite {
     width: 150px;
@@ -69,17 +93,43 @@ header {
     background-image: url('../images/fesprites.jpg');
 }
 
-.sprite:hover { background-position-y: -150px !important;}
+.sprite:hover { 
+    background-position-y: -150px !important;
+}
 
-#clair { background-position: -150px 0; }
-#eirika { background-position: -300px 0; }
-#larachel { background-position: -450px 0; }
-#ike { background-position: -600px 0; }
-#soleil { background-position: -750px 0; }
+#clair { 
+    background-position: -150px 0; 
+}
 
-.gold-bumper { height: 6px; background-color: goldenrod;}
+#eirika { 
+    background-position: -300px 0; 
+}
 
-article {padding: 20px; }
+#larachel { 
+    background-position: -450px 0; 
+}
+
+#ike { 
+    background-position: -600px 0; 
+}
+
+#soleil { 
+    background-position: -750px 0; 
+}
+
+.gold-bumper { 
+    position: absolute;
+    height: 6px; 
+    width: 100%;
+    background-color: goldenrod;
+
+    transition: all 0.5s ease;
+}
+
+article {
+    padding: 20px; 
+}
+
 article h3 {
     font-size: 2em;
     text-align: center;
@@ -123,6 +173,7 @@ footer {
     background-repeat: no-repeat;
 
     background-position: left;
+    z-index: 51;
 }
 
 .lb_close {
